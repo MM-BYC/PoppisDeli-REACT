@@ -30,6 +30,11 @@
   /* height:15px; */
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 button {
   color: white;
   flex-grow: 0;

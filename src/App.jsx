@@ -53,8 +53,8 @@ function App() {
   const [menu, setMenu] = useState("");
   //useState: Menu
 
-  const handleMenuSelection = (menu) => {
-    setMenu(menu);
+  const handleMenuSelection = (selectedMenu, menuType) => {
+    setMenu({ menu: selectedMenu, type: menuType });
   };
   //when a button is clicked, handleMenuSelection is called
   // pass this as props to component menuItem
@@ -99,7 +99,7 @@ function App() {
         lunchMenu={lunch}
         dinnerMenu={dinner}
         handleMenuSelection={handleMenuSelection}
-        menu={menu}
+        Menu={menu}
       />
     </>
   );

@@ -5,22 +5,26 @@ function MenuItem({
   lunchMenu,
   dinnerMenu,
   handleMenuSelection,
-  menu,
+  Menu,
 }) {
   return (
     <>
-      <div>
-        <button onClick={() => handleMenuSelection(breakfastMenu)}>
+      <div className="buttonContainer">
+        <button onClick={() => handleMenuSelection(breakfastMenu, "Breakfast")}>
           Breakfast
         </button>
-        <button onClick={() => handleMenuSelection(lunchMenu)}>Lunch</button>
-        <button onClick={() => handleMenuSelection(dinnerMenu)}>Dinner</button>
+        <button onClick={() => handleMenuSelection(lunchMenu, "Lunch")}>
+          Lunch
+        </button>
+        <button onClick={() => handleMenuSelection(dinnerMenu, "Dinner")}>
+          Dinner
+        </button>
       </div>
-      {menu.length > 0 && (
+      {Menu.menu && (
         <div>
-          <h2>Menu</h2>
+          <h2>{Menu.type} Menu</h2>
           <ul>
-            {menu.map((item) => (
+            {Menu.menu.map((item) => (
               <li key={item.item}>
                 {item.item} - ${item.price}
               </li>
