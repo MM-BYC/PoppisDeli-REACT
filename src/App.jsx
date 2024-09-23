@@ -5,6 +5,17 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import MenuItem from "./components/MenuItem";
 
+// import photo
+import fries from "./assets/fries.jpg";
+import burger from "./assets/burger.jpg";
+import pancake from "./assets/pancake.jpg";
+import steak from "./assets/steak.jpg";
+import salad from "./assets/salad.jpg";
+import soup from "./assets/soup.jpg";
+import salmon from "./assets/salmon.jpg";
+import gyro from "./assets/gyro.jpg";
+import spaghetti from "./assets/spaghetti.jpg";
+
 // obj: Poppis Deli
 // ------> User/Customer: [Profile]
 /* 
@@ -26,21 +37,25 @@ function App() {
   ];
 
   const breakfast = [
-    { item: "hamburger", price: 3.99 },
-    { item: "fries", price: 1.99 },
-    { item: "pancakes", price: 2.99 },
+    {
+      item: "Burger",
+      price: 3.99,
+      photo: burger,
+    },
+    { item: "Fries", price: 1.99, photo: fries },
+    { item: "Pancakes", price: 2.99, photo: pancake },
   ];
 
   const lunch = [
-    { item: "steak", price: 10.99 },
-    { item: "salad", price: 5.99 },
-    { item: "soup", price: 3.99 },
+    { item: "Steak", price: 10.99, photo: steak },
+    { item: "Salad", price: 5.99, photo: salad },
+    { item: "Soup", price: 3.99, photo: soup },
   ];
 
   const dinner = [
-    { item: "seafood", price: 5.99 },
-    { item: "gyro", price: 5.99 },
-    { item: "shrimp pasta", price: 3.99 },
+    { item: "Seafood", price: 5.99, photo: salmon },
+    { item: "Gyro", price: 5.99, photo: gyro },
+    { item: "Spaghetti", price: 3.99, photo: spaghetti },
   ];
   //
   const [user, setUser] = useState({
@@ -85,11 +100,14 @@ function App() {
   };
   return (
     <>
-      {/* Navbar */}
-      <button onClick={handleUserAccess}>HandleMe</button>
-      <button onClick={handleEmailChange}>Edit Email</button>
-      {/*component Navbar */}
-      <Navbar currentUser={user} />
+      {/* Navbar Component */}
+      <Navbar
+        currentUser={user}
+        setUser={setUser}
+        handleUserAccess={handleUserAccess}
+        handleUserNameChange={handleUserNameChange}
+        handleEmailChange={handleEmailChange}
+      />
       {/* To determine what goes here, based on state */}
       {/* <UsersProfile /> */}
 

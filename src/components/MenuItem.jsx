@@ -23,13 +23,23 @@ function MenuItem({
       {Menu.menu && (
         <div>
           <h2>{Menu.type} Menu</h2>
-          <ul>
+          <div className="menu-items">
             {Menu.menu.map((item) => (
-              <li key={item.item}>
-                {item.item} - ${item.price}
-              </li>
+              <div key={item.item} className="menu-item">
+                {item.photo && (
+                  <img
+                    src={item.photo}
+                    alt={item.item}
+                    width="150"
+                    height="150"
+                  />
+                )}{" "}
+                <div className="menu-item">
+                  {item.item} - ${item.price}
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </>

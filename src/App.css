@@ -8,7 +8,7 @@
 
 .navbar {
   margin: 0 auto;
-  border: solid peru;
+  /* border: solid peru; */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -41,4 +41,17 @@ button {
   flex-shrink: 0;
   min-width: 150px;
   max-width: 150px;
+}
+
+.menu-items {
+  box-sizing: border-box;
+  /* border: 2px solid chocolate; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  /* border: 2px solid green; */
+  margin: 10px;
 }
