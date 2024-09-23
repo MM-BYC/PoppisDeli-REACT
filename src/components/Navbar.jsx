@@ -23,16 +23,16 @@ function Navbar({
 
   return (
     <>
-      <button onClick={handleLoginLogout}>
-        {currentUser.isLoggedIn ? "Log Out" : "Sign-In"}
-      </button>
       <div className="profileNav">
+        <p>Logged In:</p>
         <p>
-          Logged In:
           {currentUser.isLoggedIn
             ? `${currentUser.name} - ${currentUser.email}`
             : ""}
         </p>
+        <button onClick={handleLoginLogout}>
+          {currentUser.isLoggedIn ? "Log Out" : "Sign-In"}
+        </button>
       </div>
     </>
   );
