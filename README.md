@@ -1,8 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project name: PoppisDeli
+# Author: Michael Marquez
+# Sep 23, 2024 - PerScholas RTT-31
 
-Currently, two official plugins are available:
+Project description: Usage of React + vite, components.
+    This project controls the State variable causing the webpage to instantly refresh its contents.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Assets in used: 
+    ===============
+       o Buttons for sign-in, logout, breakfast, lunch and dinner. 
+ 
