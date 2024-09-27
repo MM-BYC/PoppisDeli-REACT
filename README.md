@@ -7,7 +7,7 @@
 Project description: Usage of React + vite, components.
     This project controls the State variable causing the webpage to instantly refresh its contents.
 
-    Assets in used: 
+    Assets: 
     ===============
        o Buttons for sign-in, logout, breakfast, lunch and dinner. 
 
