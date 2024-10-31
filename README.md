@@ -13,18 +13,18 @@ Project description: Usage of React + vite, components.
 
 ### deployment: https://poppis-deli-react.vercel.app
 
-## The Breakfast menu
+## Breakfast menu
 
  ![breakfast menu](breakfastMenu.png)
 
-## The Lunch menu
+## Lunch menu
 
  ![lunch menu](lunchMenu.png)
 
- ## The Dinner menu
+ ## Dinner menu
 
  ![dinner menu](dinnerMenu.png)
 
- ## The Login/logout
+ ## Login/logout
 
  ![login/logout menu](login.png)
