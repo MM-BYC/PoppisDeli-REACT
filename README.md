@@ -25,6 +25,6 @@ Project description: Usage of React + vite, components.
 
  ![dinner menu](dinnerMenu.png)
 
- ## Login/logout
+ ## Logged in/ Log Out
 
  ![login/logout menu](login.png)
