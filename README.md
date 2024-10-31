@@ -11,5 +11,8 @@ Project description: Usage of React + vite, components.
     ===============
        o Buttons for sign-in, logout, breakfast, lunch, and dinner. 
 
- <img width="1007" alt="PoppisDeli" src="https://poppis-deli-react.vercel.app">
- 
+ ### deployment: https://poppis-deli-react.vercel.app
+ ![breakfast menu](breakfastMenu.png)
+ ![lunch menu](lunchMenu.png)
+ ![dinner menu](dinnerMenu.png)
+ ![login/logout menu](login.png)
