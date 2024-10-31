@@ -22,7 +22,8 @@ function MenuItem({
       </div>
       {Menu.menu && (
         <div>
-          <h2>{Menu.type} Menu</h2>
+          <h2 className="menuContainer">{Menu.type} Menu</h2>
+
           <div className="menu-items">
             {Menu.menu.map((item) => (
               <div key={item.item} className="menu-item">
