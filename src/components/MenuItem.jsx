@@ -31,8 +31,8 @@ function MenuItem({
                   <img
                     src={item.photo}
                     alt={item.item}
-                    width="150"
-                    height="150"
+                    width="200"
+                    height="200"
                   />
                 )}{" "}
                 <div className="menu-item">

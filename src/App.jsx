@@ -9,6 +9,8 @@ import MenuItem from "./components/MenuItem";
 import fries from "./assets/fries.jpg";
 import burger from "./assets/burger.jpg";
 import pancake from "./assets/pancake.jpg";
+import coffee from "./assets/coffee.jpg";
+import orangejuice from "./assets/orangejuice.jpg";
 import steak from "./assets/steak.jpg";
 import salad from "./assets/salad.jpg";
 import soup from "./assets/soup.jpg";
@@ -44,6 +46,8 @@ function App() {
     },
     { item: "Fries", price: 1.99, photo: fries },
     { item: "Pancakes", price: 2.99, photo: pancake },
+    { item: "coffee", price: 1.49, photo: coffee },
+    { item: "Orange Juice", price: 3.99, photo: orangejuice },
   ];
 
   const lunch = [
